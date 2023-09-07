@@ -1,3 +1,4 @@
+import React from 'react'
 import {AiOutlineEllipsis} from 'react-icons/ai'
 
 const Entertainment = () => {
