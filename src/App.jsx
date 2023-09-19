@@ -6,11 +6,21 @@ import Family from '../components/section/Family'
 import Entertainment from '../components/section/Entertainment'
 import Study from '../components/section/Study'
 import Work from '../components/section/Work'
+import { useState } from 'react'
+
 const App = () => {
+const [todo, settodo] = useState([{
+    id:0,
+    title:" ",
+    body:" ",
+    category:" ",
+}])
+console.log(todo)
+
   return (
     <main>
       <div>
-        <MainNav />
+        <MainNav create={settodo}/>
         <div className='flex gap-16 mt-16'>
           <div>
             <Nav />
