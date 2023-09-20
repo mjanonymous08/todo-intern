@@ -1,5 +1,6 @@
 import {Link, NavLink} from 'react-router-dom'
 import {motion} from 'framer-motion'
+
 const Nav = () => {
   return (
     <div className="flex flex-col gap-8 px-10">

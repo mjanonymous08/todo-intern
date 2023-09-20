@@ -18,7 +18,7 @@ const [createnew, setcreatenew] = useState(false)
         </div>}
         {
           createnew && 
-            <div className='absolute top-28 left-64'>
+            <div className = 'absolute top-28 left-64' >
               <CreateNew create={create} open={createnew} setopen={setcreatenew}  />
         </div>}
 
