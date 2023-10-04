@@ -2,7 +2,7 @@ import {GrAdd} from 'react-icons/gr'
 import CreateNew from './section/CreateNew'
 import { useState } from 'react'
  
-const MainNav = ({create}) => {
+const MainNav = ({created}) => {
 const [createnew, setcreatenew] = useState(false) 
   return (
     <div className='px-10 relative py-5'>
@@ -18,8 +18,8 @@ const [createnew, setcreatenew] = useState(false)
         </div>}
         {
           createnew && 
-            <div className = 'absolute top-28 left-64' >
-              <CreateNew create={create} open={createnew} setopen={setcreatenew}  />
+            <div className = 'z-50 absolute top-28 left-64' >
+              <CreateNew create={created} open={createnew} setopen={setcreatenew}  />
         </div>}
 
     </div>

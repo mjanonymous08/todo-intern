@@ -24,23 +24,23 @@ const handleDone = (e) => {
   setCheck(e)
   if(e === true) {
     const newArr = todo.filter(e => e.done === false)
-    return settarry
-    (newArr)
+    return settarry(newArr)
   }
   return settodo(todo)
 }
 console.log(todo)
+console.log(check)
 
   return (
     <main>
       <div>
-        <MainNav create ={settodo}/>
+        <MainNav created ={settodo}/>
         <div className='flex gap-16 mt-16'>
           <div className='flex flex-col items-center gap-4'>
             <Nav />
             <div className='flex gap-2 items-center'>
-                  <input onChange = {(e) => handleDone(e.target.checked)} id='done'  type='checkbox' />
-                  <label  className='text-sm' htmlFor='done'> Hide all done </label>
+                  <input onChange = {(e) => handleDone(e.target.checked)} id='dones'  type='checkbox' />
+                  <label  className='text-sm' htmlFor='dones'> Hide all done </label>
             </div>
           </div>
           <div>
